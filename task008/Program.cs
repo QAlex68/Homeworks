@@ -5,12 +5,13 @@
 Console.WriteLine("Введите число N:");
 int n = int.Parse(Console.ReadLine());
 n = Math.Abs(n);
+int n1 = n;
 if (n % 2 != 0) n--;
 
 if (n <= 1) Console.WriteLine("Четные числа числа в в указанном промежутке: 0");
 else
 {
-    Console.WriteLine($"Четные числа числа в промежутке от -{n} до {n}: ", n);
+    Console.WriteLine($"Четные числа числа в промежутке от -{n1} до {n1}: ", n);
 
     for (int i = -n; i < n; i = i + 2)
     {
